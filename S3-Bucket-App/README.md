@@ -1,15 +1,8 @@
-<h1>
-    <span style="color:green;"> Simple-S3-Bucket-App
-    </span>
-</h1>
+# Simple-S3-Bucket-App
 
 The following script are to be used in conjunction with my [cloudformation template files](https://github.com/addnightowl/Full-Stack-Desktop-Apps/tree/main/Cloud-Mania-Passport-Photo-Validation/AWS-CF-Templates-Cloud-Mania-Passport-Photo-Screening) that were created for my Cloud Mania Passport Photo Validation App.
 
-<h2>
-    <span style="color:blue;">
-    Essentially This Script Will:
-    </span>
-</h2>
+## Description
 
 1. Create and Update the AWS Infrastructure using CloudFormation Templates.
 2. Create the .env file - if desired.
@@ -23,11 +16,7 @@ The following script are to be used in conjunction with my [cloudformation templ
     - The S3 bucket will trigger a Lambda function to delete all photos from the S3 bucket before deleting the bucket.
     - After the S3 bucket is deleted, the CloudFormation stack will be deleted.
 
-<h4>
-    <span style="color:red;">
-    📝 Additional Notes:
-    </span>
-</h4>
+### 📝 Additional Notes
 
 - Run the command below to check the status of the stack manually:
  ```aws cloudformation describe-stacks --stack-name <user_provided_stack_name> --query "Stacks[0].StackStatus" --output text```
