@@ -20,7 +20,9 @@
 *.pyo
 *.pyd
 __pycache__/
-myS3BucketUploadApp.py
+
+# shell
+my_s3_bucket_app.sh
 
 # environment
 .env
